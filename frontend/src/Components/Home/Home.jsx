@@ -5,9 +5,12 @@ import "./Home.css";
 
 const Home = () => {
   const [ads, setAds] = useState([]);
-  const [newAd, setNewAd] = useState([
-    { title: "", description: "", category: "", price: 0 },
-  ]);
+  const [newAd, setNewAd] = useState({
+    title: "",
+    description: "",
+    category: "",
+    price: 0,
+  });
   const [editAd, setEditAd] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   /*const [categories, setCategories] = useState([]);

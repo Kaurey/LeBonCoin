@@ -30,7 +30,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <div class="bienvenue">
+            <div className="bienvenue">
               <p>Bonjour, {username}</p>
               <LogoutButton />
             </div>
