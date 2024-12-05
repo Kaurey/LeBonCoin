@@ -1,0 +1,81 @@
+.add-user {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-user input[type="text"], .add-user input[type="email"], .add-user input[type="password"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+}
+
+.add-user button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    /* Orange Leboncoin */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-user button:hover {
+    background-color: #e65c00;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+}
+
+.users h2 {
+    margin-bottom: 20px;
+}
+
+.user-item {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.user-item a,
+.user-item button {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.user-item a {
+    background-color: #ff6f00;
+    /* Orange Leboncoin */
+}
+
+.user-item a:hover {
+    background-color: #e65c00;
+}
+
+.user-item button {
+    background-color: #e74c3c;
+}
+
+.user-item button:hover {
+    background-color: #c0392b;
+}

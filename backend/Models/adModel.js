@@ -10,8 +10,12 @@ const adSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    adType: {
+    category: {
         type: String,
+        required: true,
+    },
+    price: {
+        type: Number,
         required: true,
     },
     createdAt: {

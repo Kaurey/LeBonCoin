@@ -45,7 +45,7 @@ const Login = async (req, res) => {
         }
 
         const token = jwt.sign(
-            { id: user._id, email: user.email }, // payload : chargement des données à transporter
+            { id: user._id, email: user.email, username: user.username }, // payload : chargement des données à transporter
             process.env.JWT_SECRET, // clé secrète pour protéger le token
             { expiresIn: process.env.JWT_EXPIRES_IN } // les options du token, en locurrence la durée de validité
         );

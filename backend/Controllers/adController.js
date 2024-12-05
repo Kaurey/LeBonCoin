@@ -20,11 +20,9 @@ const createAd = async (req, res) => {
 const getAds = async (req, res) => {
     try {
         const filter = {};
-        if (req.query.title) {
-            filter.title = { $regex: req.query.title, $options: "i" };
-        }
-        if (req.query.adType) {
-            filter.adType = { $regex: req.query.cuisineType, $options: "i" };
+
+        if (req.query.category) {
+            filter.category = { $regex: req.query.category, $options: "i" };
         }
 
         const ads = await Ad.find(filter).populate(
@@ -68,4 +66,16 @@ const deleteAd = async (req, res) => {
     }
 };
 
-module.exports = { createAd, getAds, updateAd, deleteAd };
+const getAdById = async (req, res) => {
+    try {
+        const ad = await Ad.findById(req.params.adId);
+        if (!ad) {
+            return res.status(404).send({ error: "Annonce introuvable" });
+        }
+        res.status(200).send({ message: "Annonce supprimée" });
+    } catch (error) {
+        res.status(500).send({ message: error.message });
+    }
+};
+
+module.exports = { createAd, getAds, updateAd, deleteAd, getAdById };

@@ -1,0 +1,39 @@
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: #fff;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe6cc;
+}
+
+.bienvenue {
+    display: flex;
+    justify-content: space-between;
+    width: 200px
+}
+
+.bienvenue button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bienvenue button:hover {
+    background-color: #c0392b;
+}
